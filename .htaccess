@@ -1,0 +1,15 @@
+Options -Indexes
+
+# Redirects 301 — páginas del sitio anterior
+Redirect 301 /contacto.html https://www.raccoonnow.com.ar/
+Redirect 301 /proceso.html https://www.raccoonnow.com.ar/
+Redirect 301 /form.html https://www.raccoonnow.com.ar/
+
+# Forzar HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Forzar www
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
