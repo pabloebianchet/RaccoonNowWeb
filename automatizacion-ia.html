@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Automatización con IA para Empresas | Raccoon Now</title>
+<meta name="description" content="Automatizamos procesos empresariales con Inteligencia Artificial. Chatbots, agentes IA, flujos con n8n y Make. Sedes en Buenos Aires, Miami y Torino."/>
+<meta name="keywords" content="automatización con IA empresas, chatbots empresariales, agentes IA, n8n make automatización, automatización procesos Argentina"/>
+<meta name="author" content="Raccoon Now"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
+<link rel="alternate" hreflang="es" href="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
+<link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
+<meta name="geo.region" content="AR-C"/>
+<meta name="geo.placename" content="Buenos Aires, Argentina"/>
+<link rel="icon" href="/logo.webp" type="image/webp"/>
+<link rel="apple-touch-icon" href="/logo.webp"/>
+<meta name="theme-color" content="#ff6520"/>
+<meta property="og:title" content="Automatización con IA para Empresas | Raccoon Now"/>
+<meta property="og:description" content="Automatizamos procesos con IA: chatbots, agentes, flujos n8n/Make. Resultados medibles desde el primer mes."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
+<meta property="og:image" content="https://www.raccoonnow.com.ar/logo.webp"/>
+<meta property="og:locale" content="es_AR"/>
+<meta property="og:site_name" content="Raccoon Now"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Automatización con IA para Empresas | Raccoon Now"/>
+<meta name="twitter:image" content="https://www.raccoonnow.com.ar/logo.webp"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Automatización con IA","provider":{"@type":"Organization","name":"Raccoon Now","url":"https://www.raccoonnow.com.ar"},"description":"Automatización de procesos empresariales con inteligencia artificial. Chatbots, agentes IA, flujos automáticos con n8n y Make, integrados a los sistemas del cliente.","areaServed":[{"@type":"Country","name":"Argentina"},{"@type":"Country","name":"United States"},{"@type":"Country","name":"Italy"}],"url":"https://www.raccoonnow.com.ar/automatizacion-ia.html"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué procesos puedo automatizar con IA?","acceptedAnswer":{"@type":"Answer","text":"Podés automatizar atención al cliente (chatbots 24/7), gestión de pedidos, facturación, seguimiento de leads, sincronización de datos entre sistemas, generación de reportes, clasificación de emails y cualquier tarea repetitiva que consuma tiempo de tu equipo."}},{"@type":"Question","name":"¿Cuánto tiempo tarda implementar una automatización?","acceptedAnswer":{"@type":"Answer","text":"Las automatizaciones simples (un flujo, una integración) pueden estar en producción en 1-2 semanas. Proyectos más complejos con múltiples sistemas integrados llevan entre 4 y 8 semanas."}},{"@type":"Question","name":"¿Necesito tener conocimientos técnicos?","acceptedAnswer":{"@type":"Answer","text":"No. Raccoon Now se encarga de todo el desarrollo técnico. Vos solo describís el problema y nosotros diseñamos e implementamos la solución."}},{"@type":"Question","name":"¿Qué herramientas usan para automatizar?","acceptedAnswer":{"@type":"Answer","text":"Usamos n8n, Make (ex-Integromat), Zapier, Python, OpenAI API, Anthropic Claude, LangChain y WhatsApp Business API, según el caso de uso y los sistemas del cliente."}}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1K02KKV3JV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1K02KKV3JV');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#06080f;--bg1:#0b0f1a;--bg2:#0f1420;--og:#ff6520;--og2:#ff8040;--cy:#00cfc4;--wh:#eef2ff;--mu:#5a6a88;--mu2:#8898b8;--f:'Nunito',sans-serif;--fh:'Space Grotesk',sans-serif;--glass:rgba(255,255,255,.04);--border:rgba(255,255,255,.08);--border2:rgba(255,255,255,.12);--ease:cubic-bezier(.22,.68,0,1.2)}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);background:var(--bg);color:var(--wh);overflow-x:hidden;line-height:1.6}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:var(--og);border-radius:4px}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;font-family:var(--f)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;transition:all .3s}
+nav.stuck{background:rgba(6,8,15,.92);backdrop-filter:blur(20px);padding:.8rem 5%;border-bottom:1px solid var(--border)}
+.nav-logo img{height:74px;width:auto;mix-blend-mode:screen}
+.nav-center{display:flex;gap:2rem;align-items:center}
+.nav-center a{font-size:.88rem;font-weight:700;color:var(--mu2);letter-spacing:.3px;transition:color .2s}
+.nav-center a:hover{color:var(--wh)}
+.nav-right{display:flex;align-items:center;gap:1.2rem}
+.btn-cta-nav{display:flex;align-items:center;gap:.45rem;background:var(--og);color:#fff;padding:.5rem 1.2rem;border-radius:40px;font-weight:800;font-size:.85rem;border:none;transition:all .2s}
+.btn-cta-nav:hover{background:#e85810;transform:translateY(-2px)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px}
+.burger span{display:block;width:22px;height:2px;background:var(--wh);border-radius:2px;transition:all .3s}
+
+/* BREADCRUMB */
+.breadcrumb{padding:7rem 5% 0;font-size:.82rem;color:var(--mu);display:flex;align-items:center;gap:.5rem}
+.breadcrumb a{color:var(--mu);transition:color .2s}.breadcrumb a:hover{color:var(--og)}
+.breadcrumb span{color:var(--og)}
+
+/* HERO */
+.hero-srv{padding:2rem 5% 6rem;position:relative;overflow:hidden}
+.hero-srv-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(255,101,32,.07),transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(0,207,196,.05),transparent 60%)}
+.hero-srv-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,101,32,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,101,32,.03) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 60% 60% at 70% 40%,black,transparent)}
+.hero-srv-inner{position:relative;z-index:2;max-width:780px}
+.hero-srv-badge{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgba(255,101,32,.3);border-radius:40px;padding:.35rem 1rem;margin-bottom:1.5rem;font-size:.72rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--og2)}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--og);animation:blink 1.4s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-srv h1{font-family:var(--fh);font-size:clamp(2.5rem,5vw,4.5rem);font-weight:700;line-height:1.08;letter-spacing:-2px;margin-bottom:1.4rem}
+.hero-srv h1 .acc{background:linear-gradient(100deg,var(--og),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-srv-desc{font-size:1.1rem;color:var(--mu2);max-width:620px;line-height:1.8;margin-bottom:2.2rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-main{display:inline-flex;align-items:center;gap:.55rem;background:var(--og);color:#fff;padding:.85rem 2rem;border-radius:40px;font-weight:800;font-size:1rem;border:none;transition:all .25s}
+.btn-main:hover{background:#e85810;transform:translateY(-3px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:.5rem;color:var(--mu2);font-weight:700;font-size:.95rem;border:1px solid var(--border2);border-radius:40px;padding:.8rem 1.7rem;background:var(--glass);transition:all .2s}
+.btn-ghost:hover{border-color:var(--cy);color:var(--cy)}
+.hero-stats{display:flex;gap:3rem;margin-top:3rem;flex-wrap:wrap}
+.hstat-n{font-family:var(--fh);font-size:2rem;font-weight:700;background:linear-gradient(130deg,var(--og),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hstat-l{font-size:.72rem;color:var(--mu);font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-top:.2rem}
+
+/* TOOLS STRIP */
+.tools-strip{padding:2.5rem 5%;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg1);display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.tools-strip-label{font-size:.75rem;font-weight:800;color:var(--mu);text-transform:uppercase;letter-spacing:1.5px;white-space:nowrap;margin-right:.5rem}
+.tool-pill{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .9rem;background:var(--glass);border:1px solid var(--border);border-radius:40px;font-size:.82rem;font-weight:700;color:var(--mu2);transition:all .25s}
+.tool-pill:hover{border-color:rgba(255,101,32,.3);color:var(--wh)}
+.tool-pill img{width:16px;height:16px;filter:brightness(0) invert(1);opacity:.6}
+
+/* SECTIONS */
+section{padding:6rem 5%}
+.sect-tag{font-size:.72rem;font-weight:900;letter-spacing:2.5px;text-transform:uppercase;color:var(--og);margin-bottom:.75rem}
+.sect-h{font-family:var(--fh);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;letter-spacing:-1px;line-height:1.15}
+.sect-p{color:var(--mu2);font-size:1rem;line-height:1.8;max-width:560px;margin-top:.75rem}
+
+/* USE CASES */
+.usecases{background:var(--bg1)}
+.uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:3rem}
+.uc-card{background:var(--glass);border:1px solid var(--border);border-radius:22px;padding:2rem;transition:all .3s;position:relative;overflow:hidden}
+.uc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--og),var(--cy));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.uc-card:hover{border-color:var(--border2);transform:translateY(-4px)}
+.uc-card:hover::after{transform:scaleX(1)}
+.uc-icon{font-size:2rem;margin-bottom:1rem;line-height:1}
+.uc-card h3{font-family:var(--fh);font-size:1rem;font-weight:700;margin-bottom:.6rem}
+.uc-card p{font-size:.88rem;color:var(--mu2);line-height:1.65}
+
+/* HOW */
+.how{background:var(--bg2)}
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
+.how-list{display:flex;flex-direction:column;gap:1.5rem}
+.how-item{display:flex;gap:1.2rem;align-items:flex-start}
+.how-num{font-family:var(--fh);font-size:1.8rem;font-weight:700;color:rgba(255,101,32,.2);flex-shrink:0;line-height:1;width:2rem;text-align:center}
+.how-item h4{font-size:.95rem;font-weight:800;margin-bottom:.3rem}
+.how-item p{font-size:.85rem;color:var(--mu2);line-height:1.6}
+.how-visual{background:var(--glass);border:1px solid var(--border);border-radius:24px;padding:2.5rem;display:flex;flex-direction:column;gap:1rem}
+.hv-row{display:flex;align-items:center;gap:1rem;padding:.8rem 1rem;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px}
+.hv-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem}
+.hv-t{font-size:.85rem;font-weight:700}
+.hv-s{font-size:.75rem;color:var(--mu2)}
+.hv-arrow{margin-left:auto;color:var(--og);font-size:1rem}
+
+/* RESULTS */
+.results{background:var(--bg)}
+.results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3rem}
+.result-card{background:var(--glass);border:1px solid var(--border);border-radius:20px;padding:2rem;text-align:center}
+.result-n{font-family:var(--fh);font-size:2.8rem;font-weight:700;background:linear-gradient(130deg,var(--og),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.result-l{font-size:.8rem;color:var(--mu2);margin-top:.5rem;line-height:1.4}
+
+/* FAQ */
+.faq{background:var(--bg1)}
+.faq-list{max-width:760px;margin:3rem auto 0;display:flex;flex-direction:column;gap:.8rem}
+.faq-item{background:var(--glass);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:rgba(255,101,32,.25)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 1.5rem;cursor:pointer;gap:1rem}
+.faq-q span{font-size:.95rem;font-weight:700}
+.faq-chevron{width:18px;height:18px;color:var(--mu);flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--og)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1)}
+.faq-a-inner{padding:0 1.5rem 1.3rem;font-size:.9rem;color:var(--mu2);line-height:1.75}
+
+/* CTA */
+.cta-s{background:var(--bg2);text-align:center;padding:7rem 5%;position:relative;overflow:hidden}
+.cta-glow{position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(255,101,32,.07),transparent);pointer-events:none}
+.cta-s h2{font-family:var(--fh);font-size:clamp(2rem,4vw,3.2rem);font-weight:700;letter-spacing:-1.5px;margin-bottom:1rem}
+.cta-s p{color:var(--mu2);font-size:1.05rem;max-width:480px;margin:0 auto 2.5rem;line-height:1.8}
+
+/* FOOTER */
+footer{background:var(--bg1);border-top:1px solid var(--border);padding:4rem 5% 2.5rem}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;max-width:1200px;margin:0 auto 3rem}
+.foot-logo-txt{font-family:var(--fh);font-size:1.4rem;font-weight:700;margin-bottom:.8rem}
+.foot-logo-txt em{font-style:normal;color:var(--og)}
+.foot-desc{color:var(--mu2);font-size:.88rem;line-height:1.7;max-width:230px;margin-bottom:1.2rem}
+.foot-col h4{font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;color:var(--mu);margin-bottom:1rem}
+.foot-col ul{display:flex;flex-direction:column;gap:.65rem}
+.foot-col ul a{font-size:.88rem;font-weight:600;color:var(--mu2);transition:color .2s}
+.foot-col ul a:hover{color:var(--wh)}
+.foot-offices{display:flex;flex-direction:column;gap:1rem}
+.fo-item{display:flex;align-items:flex-start;gap:.7rem}
+.fo-flag{font-size:1.1rem;line-height:1;margin-top:.1rem}
+.fo-city{font-size:.88rem;font-weight:800}
+.fo-addr{font-size:.78rem;color:var(--mu)}
+.foot-btm{border-top:1px solid var(--border);max-width:1200px;margin:0 auto;padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.foot-btm p{font-size:.8rem;color:var(--mu)}
+.foot-tag{background:rgba(255,101,32,.1);border:1px solid rgba(255,101,32,.2);border-radius:40px;padding:.3rem .9rem;font-size:.75rem;font-weight:800;color:var(--og2)}
+
+/* WA FLOAT */
+.waf{position:fixed;bottom:1.8rem;right:1.8rem;z-index:800;width:56px;height:56px;border-radius:50%;background:#22c55e;color:#fff;display:flex;align-items:center;justify-content:center;transition:transform .25s var(--ease);box-shadow:0 8px 30px rgba(34,197,94,.4)}
+.waf:hover{transform:scale(1.1) translateY(-3px)}
+.waf svg{width:28px;height:28px}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+.rv2{opacity:0;transform:translateY(28px);transition:opacity .7s .15s,transform .7s .15s}
+.rv2.in{opacity:1;transform:none}
+
+/* MOBILE */
+@media(max-width:1024px){.uc-grid{grid-template-columns:1fr 1fr}.how-grid{grid-template-columns:1fr}.results-grid{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
+@media(max-width:700px){
+  nav{padding:.75rem 4%}
+  .nav-logo img{height:46px}
+  .btn-cta-nav{display:none}
+  .nav-center{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:1.5rem 5%;background:rgba(6,8,15,.97);border-bottom:1px solid var(--border)}
+  .nav-center.open{display:flex}
+  .burger{display:flex}
+  section{padding:5rem 4%}
+  .uc-grid{grid-template-columns:1fr}
+  .results-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr;gap:2rem}
+  .foot-btm{flex-direction:column;text-align:center}
+  .tools-strip{gap:.6rem}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="nav-logo" aria-label="Raccoon Now">
+    <img src="/logo.webp" alt="Raccoon Now" width="211" height="74"/>
+  </a>
+  <ul class="nav-center" id="navLinks">
+    <li><a href="/#servicios">Servicios</a></li>
+    <li><a href="/#nosotros">Nosotros</a></li>
+    <li><a href="/#proceso">Proceso</a></li>
+    <li><a href="/#blog">Blog</a></li>
+    <li><a href="/#contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://wa.me/541150392723/?text=Hola%20RACCOON%20NOW,%20quisiera%20información%20sobre%20Automatización%20con%20IA:" class="btn-cta-nav" rel="noopener noreferrer">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Hablemos
+    </a>
+    <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Inicio</a> › <a href="/#servicios">Servicios</a> › <span>Automatización con IA</span>
+</nav>
+
+<!-- HERO -->
+<div class="hero-srv">
+  <div class="hero-srv-bg" aria-hidden="true"></div>
+  <div class="hero-srv-grid" aria-hidden="true"></div>
+  <div class="hero-srv-inner rv">
+    <div class="hero-srv-badge"><span class="badge-dot"></span> Servicio #01</div>
+    <h1>Automatizamos tu empresa<br/>con <span class="acc">Inteligencia Artificial</span></h1>
+    <p class="hero-srv-desc">Eliminamos las tareas repetitivas de tu operación con flujos inteligentes, chatbots empresariales y agentes de IA que trabajan 24/7 integrados a tus sistemas actuales.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/541150392723/?text=Hola%20RACCOON%20NOW,%20quisiera%20automatizar%20mi%20empresa%20con%20IA:" class="btn-main" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Consultá gratis
+      </a>
+      <a href="#casos" class="btn-ghost">Ver casos de uso ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="hstat-n">-70%</div><div class="hstat-l">Tiempo operativo</div></div>
+      <div><div class="hstat-n">24/7</div><div class="hstat-l">Disponibilidad</div></div>
+      <div><div class="hstat-n">30+</div><div class="hstat-l">Automatizaciones</div></div>
+      <div><div class="hstat-n">1 mes</div><div class="hstat-l">Retorno de inversión</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TOOLS STRIP -->
+<div class="tools-strip rv">
+  <span class="tools-strip-label">Tecnologías</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/n8n/ffffff" alt="n8n" loading="lazy"/>n8n</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/make/ffffff" alt="Make" loading="lazy"/>Make</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/openai/ffffff" alt="OpenAI" loading="lazy"/>OpenAI</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/anthropic/ffffff" alt="Claude" loading="lazy"/>Claude</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/python/ffffff" alt="Python" loading="lazy"/>Python</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/zapier/ffffff" alt="Zapier" loading="lazy"/>Zapier</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/langchain/ffffff" alt="LangChain" loading="lazy"/>LangChain</span>
+  <span class="tool-pill"><img src="https://cdn.simpleicons.org/huggingface/ffffff" alt="HuggingFace" loading="lazy"/>HuggingFace</span>
+</div>
+
+<!-- USE CASES -->
+<section class="usecases" id="casos">
+  <div class="rv">
+    <div class="sect-tag">Casos de uso</div>
+    <h2 class="sect-h">¿Qué podés automatizar?</h2>
+    <p class="sect-p">Cualquier proceso repetitivo que consuma tiempo de tu equipo puede ser automatizado. Estos son los más comunes que implementamos.</p>
+  </div>
+  <div class="uc-grid">
+    <div class="uc-card rv"><div class="uc-icon">💬</div><h3>Atención al cliente 24/7</h3><p>Chatbots con IA que responden consultas, gestionan pedidos y derivan a humanos cuando es necesario. Integrados con WhatsApp, email y tu CRM.</p></div>
+    <div class="uc-card rv"><div class="uc-icon">📄</div><h3>Procesamiento de documentos</h3><p>Extracción automática de datos de facturas, contratos, formularios y emails. Clasificación, validación y carga en tus sistemas sin intervención manual.</p></div>
+    <div class="uc-card rv"><div class="uc-icon">🔄</div><h3>Sincronización de sistemas</h3><p>Integración entre CRM, ERP, e-commerce, contabilidad y cualquier herramienta. Los datos fluyen automáticamente sin copias manuales.</p></div>
+    <div class="uc-card rv2"><div class="uc-icon">📊</div><h3>Reportes automáticos</h3><p>Reportes de ventas, operaciones y finanzas generados y enviados automáticamente a los tiempos que definas. Sin Excel, sin trabajo manual.</p></div>
+    <div class="uc-card rv2"><div class="uc-icon">🤖</div><h3>Agentes de IA internos</h3><p>Asistentes de IA entrenados con el conocimiento de tu empresa. Responden preguntas del equipo, redactan documentos y analizan datos en segundos.</p></div>
+    <div class="uc-card rv2"><div class="uc-icon">📧</div><h3>Marketing y seguimiento</h3><p>Secuencias automáticas de email y WhatsApp, seguimiento de leads, scoring y asignación a vendedores según comportamiento del prospecto.</p></div>
+  </div>
+</section>
+
+<!-- HOW WE DO IT -->
+<section class="how" id="como">
+  <div class="rv">
+    <div class="sect-tag">Nuestra metodología</div>
+    <h2 class="sect-h">Cómo implementamos<br/>la automatización</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-list rv">
+      <div class="how-item"><div class="how-num">1</div><div><h4>Diagnóstico del proceso</h4><p>Analizamos el proceso actual, identificamos cuellos de botella y calculamos el ROI potencial antes de escribir una línea de código.</p></div></div>
+      <div class="how-item"><div class="how-num">2</div><div><h4>Diseño del flujo</h4><p>Mapeamos el flujo automatizado, definimos las integraciones necesarias y elegimos las herramientas correctas para el caso.</p></div></div>
+      <div class="how-item"><div class="how-num">3</div><div><h4>Desarrollo y pruebas</h4><p>Construimos la automatización, la probamos con datos reales y validamos que funciona exactamente como se esperaba.</p></div></div>
+      <div class="how-item"><div class="how-num">4</div><div><h4>Deploy y monitoreo</h4><p>Ponemos la automatización en producción, configuramos alertas y monitoreamos el rendimiento en tiempo real.</p></div></div>
+      <div class="how-item"><div class="how-num">5</div><div><h4>Soporte y optimización</h4><p>No desaparecemos. Mantenemos, mejoramos y expandimos tus automatizaciones a medida que crece tu empresa.</p></div></div>
+    </div>
+    <div class="how-visual rv2">
+      <div class="hv-row"><div class="hv-icon" style="background:rgba(255,101,32,.1)">📥</div><div><div class="hv-t">Trigger disparado</div><div class="hv-s">Nuevo pedido recibido</div></div><div class="hv-arrow">→</div></div>
+      <div class="hv-row"><div class="hv-icon" style="background:rgba(0,207,196,.1)">🔍</div><div><div class="hv-t">Validación con IA</div><div class="hv-s">OpenAI analiza el pedido</div></div><div class="hv-arrow">→</div></div>
+      <div class="hv-row"><div class="hv-icon" style="background:rgba(167,139,250,.1)">⚙️</div><div><div class="hv-t">Acción automática</div><div class="hv-s">Crea tarea en CRM</div></div><div class="hv-arrow">→</div></div>
+      <div class="hv-row"><div class="hv-icon" style="background:rgba(34,197,94,.1)">💬</div><div><div class="hv-t">Notificación enviada</div><div class="hv-s">WhatsApp al cliente</div></div><div class="hv-arrow">→</div></div>
+      <div class="hv-row"><div class="hv-icon" style="background:rgba(245,158,11,.1)">📊</div><div><div class="hv-t">Registro en dashboard</div><div class="hv-s">KPI actualizado en tiempo real</div></div><div class="hv-arrow">✓</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results">
+  <div class="rv text-c" style="text-align:center">
+    <div class="sect-tag" style="display:inline-block">Resultados reales</div>
+    <h2 class="sect-h">Qué logramos para nuestros clientes</h2>
+  </div>
+  <div class="results-grid">
+    <div class="result-card rv"><div class="result-n">-70%</div><div class="result-l">Reducción de tiempo en tareas operativas manuales</div></div>
+    <div class="result-card rv"><div class="result-n">3h→0</div><div class="result-l">Horas diarias eliminadas en gestión de pedidos</div></div>
+    <div class="result-card rv"><div class="result-n">24/7</div><div class="result-l">Atención al cliente sin interrupciones ni costos extra</div></div>
+    <div class="result-card rv"><div class="result-n">1 mes</div><div class="result-l">Tiempo promedio para ver retorno de inversión</div></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="rv" style="text-align:center">
+    <div class="sect-tag" style="display:inline-block">FAQ</div>
+    <h2 class="sect-h">Preguntas frecuentes</h2>
+  </div>
+  <div class="faq-list" id="faqList"></div>
+</section>
+
+<!-- CTA -->
+<section class="cta-s" id="contacto">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div style="position:relative;z-index:2" class="rv">
+    <div class="sect-tag" style="display:inline-block">Siguiente paso</div>
+    <h2>¿Listo para automatizar<br/>tu operación?</h2>
+    <p>15 minutos de llamada. Sin compromiso. Te mostramos exactamente qué procesos de tu empresa podemos automatizar y cuánto tiempo te vamos a ahorrar.</p>
+    <a href="https://wa.me/541150392723/?text=Hola%20RACCOON%20NOW,%20quisiera%20una%20consulta%20sobre%20automatización%20con%20IA" class="btn-main" style="display:inline-flex;font-size:1.05rem;padding:1rem 2.5rem" rel="noopener noreferrer">
+      Agendar consulta gratuita
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-logo-txt">RACCOON<em> NOW</em></div>
+      <p class="foot-desc">Empresa global de automatización con IA, desarrollo de software a medida y sistemas de gestión empresarial.</p>
+      <address style="font-style:normal" class="foot-offices">
+        <div class="fo-item"><span class="fo-flag">🇦🇷</span><div><div class="fo-city">Buenos Aires</div><div class="fo-addr">LATAM HQ · Argentina</div></div></div>
+        <div class="fo-item"><span class="fo-flag">🇺🇸</span><div><div class="fo-city">Miami, FL</div><div class="fo-addr">North America · USA</div></div></div>
+        <div class="fo-item"><span class="fo-flag">🇮🇹</span><div><div class="fo-city">Torino</div><div class="fo-addr">Europe Central · Italia</div></div></div>
+      </address>
+    </div>
+    <div class="foot-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="/automatizacion-ia.html">Automatización IA</a></li>
+        <li><a href="/desarrollo-software-a-medida.html">Software a Medida</a></li>
+        <li><a href="/apps-moviles.html">Apps Móviles</a></li>
+        <li><a href="/sistemas-gestion-erp-crm.html">Sistemas de Gestión</a></li>
+        <li><a href="/diseno-web-ecommerce.html">Diseño Web</a></li>
+        <li><a href="/consultoria-digital.html">Consultoría Digital</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="/#nosotros">Nosotros</a></li>
+        <li><a href="/#proceso">Proceso</a></li>
+        <li><a href="/#sedes">Sedes</a></li>
+        <li><a href="https://wa.me/541150392723/?text=Hola%20RACCOON%20NOW,%20quisiera%20trabajar%20con%20ustedes" rel="noopener noreferrer">Trabajá con nosotros</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/541150392723" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="mailto:info@raccoonnow.com.ar">info@raccoonnow.com.ar</a></li>
+        <li><a href="https://www.raccoonnow.com.ar" rel="noopener noreferrer">raccoonnow.com.ar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-btm">
+    <p>© 2026 RACCOON NOW — Buenos Aires · Miami · Torino</p>
+    <span class="foot-tag">🌎 Presencia Global</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/541150392723/?text=Hola%20RACCOON%20NOW,%20quisiera%20información%20sobre%20automatización%20con%20IA:" class="waf" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const FAQ=[
+  {q:'¿Qué procesos puedo automatizar con IA?',a:'Podés automatizar atención al cliente (chatbots 24/7), gestión de pedidos, facturación, seguimiento de leads, sincronización de datos entre sistemas, generación de reportes, clasificación de emails y cualquier tarea repetitiva que consuma tiempo de tu equipo.'},
+  {q:'¿Cuánto tiempo tarda implementar una automatización?',a:'Las automatizaciones simples (un flujo, una integración) pueden estar en producción en 1-2 semanas. Proyectos más complejos con múltiples sistemas integrados llevan entre 4 y 8 semanas.'},
+  {q:'¿Necesito tener conocimientos técnicos?',a:'No. Raccoon Now se encarga de todo el desarrollo técnico. Vos solo describís el problema y nosotros diseñamos e implementamos la solución completa.'},
+  {q:'¿Qué herramientas usan para automatizar?',a:'Usamos n8n, Make, Zapier, Python, OpenAI API, Anthropic Claude, LangChain y WhatsApp Business API, según el caso de uso y los sistemas del cliente.'},
+  {q:'¿Las automatizaciones funcionan con mis sistemas actuales?',a:'Sí. Nos integramos con prácticamente cualquier sistema que tenga API: CRMs (HubSpot, Salesforce, Zoho), ERPs, e-commerce (WooCommerce, TiendaNube, Shopify), Google Workspace, Microsoft 365 y más.'},
+];
+const fl=document.getElementById('faqList');
+FAQ.forEach(f=>{
+  const div=document.createElement('div');div.className='faq-item';
+  div.innerHTML=`<div class="faq-q"><span>${f.q}</span><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a"><div class="faq-a-inner">${f.a}</div></div>`;
+  const q=div.querySelector('.faq-q'),a=div.querySelector('.faq-a'),ai=div.querySelector('.faq-a-inner');
+  q.addEventListener('click',()=>{
+    const open=div.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el=>{el.classList.remove('open');el.querySelector('.faq-a').style.maxHeight='0';});
+    if(!open){div.classList.add('open');a.style.maxHeight=ai.scrollHeight+'px';}
+  });
+  fl.appendChild(div);
+});
+
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('stuck',window.scrollY>40),{passive:true});
+document.getElementById('burger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
+
+const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{threshold:.08});
+document.querySelectorAll('.rv,.rv2').forEach(el=>ro.observe(el));
+</script>
+</body>
+</html>
