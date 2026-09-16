@@ -3,55 +3,224 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://www.raccoonnow.com.ar/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <loc>https://www.raccoonnow.com/</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es-ar" href="https://www.raccoonnow.com.ar/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com.ar/" />
-  </url>
-
-
-  <url>
-    <loc>https://www.raccoonnow.com.ar/automatizacion-ia.html</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/" />
   </url>
 
   <url>
-    <loc>https://www.raccoonnow.com.ar/desarrollo-software-a-medida.html</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.raccoonnow.com/es/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/" />
   </url>
 
   <url>
-    <loc>https://www.raccoonnow.com.ar/apps-moviles.html</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.raccoonnow.com/en/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/" />
   </url>
 
   <url>
-    <loc>https://www.raccoonnow.com.ar/sistemas-gestion-erp-crm.html</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.raccoonnow.com/it/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/" />
   </url>
 
   <url>
-    <loc>https://www.raccoonnow.com.ar/diseno-web-ecommerce.html</loc>
+    <loc>https://www.raccoonnow.com/automatizacion-ia.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Desarrollo de Software a Medida -->
+  <url>
+    <loc>https://www.raccoonnow.com/es/desarrollo-software-a-medida.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/desarrollo-software-a-medida.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/custom-software-development.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/sviluppo-software-su-misura.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/desarrollo-software-a-medida.html" />
   </url>
 
   <url>
-    <loc>https://www.raccoonnow.com.ar/consultoria-digital.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://www.raccoonnow.com/en/custom-software-development.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/desarrollo-software-a-medida.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/custom-software-development.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/sviluppo-software-su-misura.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/desarrollo-software-a-medida.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/sviluppo-software-su-misura.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/desarrollo-software-a-medida.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/custom-software-development.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/sviluppo-software-su-misura.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/desarrollo-software-a-medida.html" />
+  </url>
+
+  <!-- Diseño Web y SEO -->
+  <url>
+    <loc>https://www.raccoonnow.com/es/diseno-web-seo.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/diseno-web-seo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/web-design-seo.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/siti-web-seo.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/diseno-web-seo.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/en/web-design-seo.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/diseno-web-seo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/web-design-seo.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/siti-web-seo.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/diseno-web-seo.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/siti-web-seo.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/diseno-web-seo.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/web-design-seo.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/siti-web-seo.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/diseno-web-seo.html" />
+  </url>
+
+  <!-- Apps Web, Móviles y Desktop -->
+  <url>
+    <loc>https://www.raccoonnow.com/es/apps-web-moviles.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/apps-web-moviles.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/web-mobile-apps.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/app-web-mobile.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/apps-web-moviles.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/en/web-mobile-apps.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/apps-web-moviles.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/web-mobile-apps.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/app-web-mobile.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/apps-web-moviles.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/app-web-mobile.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/apps-web-moviles.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/web-mobile-apps.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/app-web-mobile.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/apps-web-moviles.html" />
+  </url>
+
+  <!-- Sistemas de Gestión ERP y CRM -->
+  <url>
+    <loc>https://www.raccoonnow.com/es/sistemas-gestion-erp-crm.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/sistemas-gestion-erp-crm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/erp-crm-management-systems.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/sistemi-gestionali-erp-crm.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/sistemas-gestion-erp-crm.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/en/erp-crm-management-systems.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/sistemas-gestion-erp-crm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/erp-crm-management-systems.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/sistemi-gestionali-erp-crm.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/sistemas-gestion-erp-crm.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/sistemi-gestionali-erp-crm.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/sistemas-gestion-erp-crm.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/erp-crm-management-systems.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/sistemi-gestionali-erp-crm.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/sistemas-gestion-erp-crm.html" />
+  </url>
+
+  <!-- Consultoría Digital y Automatización -->
+  <url>
+    <loc>https://www.raccoonnow.com/es/consultoria-digital-automatizacion.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/consultoria-digital-automatizacion.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/digital-consulting-automation.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/consulenza-digitale-automazione.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/consultoria-digital-automatizacion.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/en/digital-consulting-automation.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/consultoria-digital-automatizacion.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/digital-consulting-automation.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/consulenza-digitale-automazione.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/consultoria-digital-automatizacion.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/consulenza-digitale-automazione.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/consultoria-digital-automatizacion.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/digital-consulting-automation.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/consulenza-digitale-automazione.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/consultoria-digital-automatizacion.html" />
   </url>
 
 </urlset>

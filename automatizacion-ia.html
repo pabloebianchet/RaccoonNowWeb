@@ -8,9 +8,9 @@
 <meta name="keywords" content="automatización con IA empresas, chatbots empresariales, agentes IA, n8n make automatización, automatización procesos Argentina"/>
 <meta name="author" content="Raccoon Now"/>
 <meta name="robots" content="index,follow"/>
-<link rel="canonical" href="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
-<link rel="alternate" hreflang="es" href="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
-<link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
+<link rel="canonical" href="https://www.raccoonnow.com/automatizacion-ia.html"/>
+<link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/automatizacion-ia.html"/>
+<link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/automatizacion-ia.html"/>
 <meta name="geo.region" content="AR-C"/>
 <meta name="geo.placename" content="Buenos Aires, Argentina"/>
 <link rel="icon" href="/logo.webp" type="image/webp"/>
@@ -19,14 +19,14 @@
 <meta property="og:title" content="Automatización con IA para Empresas | Raccoon Now"/>
 <meta property="og:description" content="Automatizamos procesos con IA: chatbots, agentes, flujos n8n/Make. Resultados medibles desde el primer mes."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://www.raccoonnow.com.ar/automatizacion-ia.html"/>
-<meta property="og:image" content="https://www.raccoonnow.com.ar/logo.webp"/>
+<meta property="og:url" content="https://www.raccoonnow.com/automatizacion-ia.html"/>
+<meta property="og:image" content="https://www.raccoonnow.com/logo.webp"/>
 <meta property="og:locale" content="es_AR"/>
 <meta property="og:site_name" content="Raccoon Now"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Automatización con IA para Empresas | Raccoon Now"/>
-<meta name="twitter:image" content="https://www.raccoonnow.com.ar/logo.webp"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Automatización con IA","provider":{"@type":"Organization","name":"Raccoon Now","url":"https://www.raccoonnow.com.ar"},"description":"Automatización de procesos empresariales con inteligencia artificial. Chatbots, agentes IA, flujos automáticos con n8n y Make, integrados a los sistemas del cliente.","areaServed":[{"@type":"Country","name":"Argentina"},{"@type":"Country","name":"United States"},{"@type":"Country","name":"Italy"}],"url":"https://www.raccoonnow.com.ar/automatizacion-ia.html"}</script>
+<meta name="twitter:image" content="https://www.raccoonnow.com/logo.webp"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Automatización con IA","provider":{"@type":"Organization","name":"Raccoon Now","url":"https://www.raccoonnow.com"},"description":"Automatización de procesos empresariales con inteligencia artificial. Chatbots, agentes IA, flujos automáticos con n8n y Make, integrados a los sistemas del cliente.","areaServed":[{"@type":"Country","name":"Argentina"},{"@type":"Country","name":"United States"},{"@type":"Country","name":"Italy"}],"url":"https://www.raccoonnow.com/automatizacion-ia.html"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué procesos puedo automatizar con IA?","acceptedAnswer":{"@type":"Answer","text":"Podés automatizar atención al cliente (chatbots 24/7), gestión de pedidos, facturación, seguimiento de leads, sincronización de datos entre sistemas, generación de reportes, clasificación de emails y cualquier tarea repetitiva que consuma tiempo de tu equipo."}},{"@type":"Question","name":"¿Cuánto tiempo tarda implementar una automatización?","acceptedAnswer":{"@type":"Answer","text":"Las automatizaciones simples (un flujo, una integración) pueden estar en producción en 1-2 semanas. Proyectos más complejos con múltiples sistemas integrados llevan entre 4 y 8 semanas."}},{"@type":"Question","name":"¿Necesito tener conocimientos técnicos?","acceptedAnswer":{"@type":"Answer","text":"No. Raccoon Now se encarga de todo el desarrollo técnico. Vos solo describís el problema y nosotros diseñamos e implementamos la solución."}},{"@type":"Question","name":"¿Qué herramientas usan para automatizar?","acceptedAnswer":{"@type":"Answer","text":"Usamos n8n, Make (ex-Integromat), Zapier, Python, OpenAI API, Anthropic Claude, LangChain y WhatsApp Business API, según el caso de uso y los sistemas del cliente."}}]}</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1K02KKV3JV"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1K02KKV3JV');</script>
@@ -42,8 +42,8 @@ body{font-family:var(--f);background:var(--bg);color:var(--wh);overflow-x:hidden
 img{display:block;max-width:100%}a{text-decoration:none;color:inherit}ul{list-style:none}button{cursor:pointer;font-family:var(--f)}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;transition:all .3s}
-nav.stuck{background:rgba(6,8,15,.92);backdrop-filter:blur(20px);padding:.8rem 5%;border-bottom:1px solid var(--border)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 5%;transition:all .3s}
+#nav.stuck{background:rgba(6,8,15,.92);backdrop-filter:blur(20px);padding:.8rem 5%;border-bottom:1px solid var(--border)}
 .nav-logo img{height:74px;width:auto;mix-blend-mode:screen}
 .nav-center{display:flex;gap:2rem;align-items:center}
 .nav-center a{font-size:.88rem;font-weight:700;color:var(--mu2);letter-spacing:.3px;transition:color .2s}
@@ -54,13 +54,15 @@ nav.stuck{background:rgba(6,8,15,.92);backdrop-filter:blur(20px);padding:.8rem 5
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px}
 .burger span{display:block;width:22px;height:2px;background:var(--wh);border-radius:2px;transition:all .3s}
 
+main{padding-top:7.5rem}
+
 /* BREADCRUMB */
-.breadcrumb{padding:7rem 5% 0;font-size:.82rem;color:var(--mu);display:flex;align-items:center;gap:.5rem}
+.breadcrumb{padding:0 5% 1.5rem;font-size:.82rem;color:var(--mu);display:flex;align-items:center;gap:.5rem}
 .breadcrumb a{color:var(--mu);transition:color .2s}.breadcrumb a:hover{color:var(--og)}
 .breadcrumb span{color:var(--og)}
 
 /* HERO */
-.hero-srv{padding:2rem 5% 6rem;position:relative;overflow:hidden}
+.hero-srv{padding:0 5% 6rem;position:relative;overflow:hidden}
 .hero-srv-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(255,101,32,.07),transparent 70%),radial-gradient(ellipse 40% 60% at 10% 80%,rgba(0,207,196,.05),transparent 60%)}
 .hero-srv-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,101,32,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,101,32,.03) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 60% 60% at 70% 40%,black,transparent)}
 .hero-srv-inner{position:relative;z-index:2;max-width:780px}
@@ -176,7 +178,8 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:4rem 5% 
 /* MOBILE */
 @media(max-width:1024px){.uc-grid{grid-template-columns:1fr 1fr}.how-grid{grid-template-columns:1fr}.results-grid{grid-template-columns:1fr 1fr}.foot-grid{grid-template-columns:1fr 1fr;gap:2rem}}
 @media(max-width:700px){
-  nav{padding:.75rem 4%}
+  main{padding-top:5.5rem}
+  #nav{padding:.75rem 4%}
   .nav-logo img{height:46px}
   .btn-cta-nav{display:none}
   .nav-center{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:1.5rem 5%;background:rgba(6,8,15,.97);border-bottom:1px solid var(--border)}
@@ -195,7 +198,7 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:4rem 5% 
 
 <nav id="nav">
   <a href="/" class="nav-logo" aria-label="Raccoon Now">
-    <img src="/logo.webp" alt="Raccoon Now" width="211" height="74"/>
+    <img src="logo.webp" alt="Raccoon Now" width="211" height="74"/>
   </a>
   <ul class="nav-center" id="navLinks">
     <li><a href="/#servicios">Servicios</a></li>
@@ -350,12 +353,12 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:4rem 5% 
     <div class="foot-col">
       <h4>Servicios</h4>
       <ul>
-        <li><a href="/automatizacion-ia.html">Automatización IA</a></li>
-        <li><a href="/desarrollo-software-a-medida.html">Software a Medida</a></li>
-        <li><a href="/apps-moviles.html">Apps Móviles</a></li>
-        <li><a href="/sistemas-gestion-erp-crm.html">Sistemas de Gestión</a></li>
-        <li><a href="/diseno-web-ecommerce.html">Diseño Web</a></li>
-        <li><a href="/consultoria-digital.html">Consultoría Digital</a></li>
+        <li><a href="/automatizacion-ia.html">Automatización con IA</a></li>
+        <li><a href="/es/desarrollo-software-a-medida.html">Desarrollo de Software a Medida</a></li>
+        <li><a href="/es/diseno-web-seo.html">Diseño Web y SEO</a></li>
+        <li><a href="/es/apps-web-moviles.html">Apps Web, Móviles y Desktop</a></li>
+        <li><a href="/es/sistemas-gestion-erp-crm.html">Sistemas de Gestión ERP y CRM</a></li>
+        <li><a href="/es/consultoria-digital-automatizacion.html">Consultoría Digital</a></li>
       </ul>
     </div>
     <div class="foot-col">
@@ -371,8 +374,8 @@ footer{background:var(--bg1);border-top:1px solid var(--border);padding:4rem 5% 
       <h4>Contacto</h4>
       <ul>
         <li><a href="https://wa.me/541150392723" rel="noopener noreferrer">WhatsApp</a></li>
-        <li><a href="mailto:info@raccoonnow.com.ar">info@raccoonnow.com.ar</a></li>
-        <li><a href="https://www.raccoonnow.com.ar" rel="noopener noreferrer">raccoonnow.com.ar</a></li>
+        <li><a href="mailto:info@raccoonnow.com">info@raccoonnow.com</a></li>
+        <li><a href="https://www.raccoonnow.com" rel="noopener noreferrer">raccoonnow.com</a></li>
       </ul>
     </div>
   </div>
