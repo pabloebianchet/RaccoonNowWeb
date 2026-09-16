@@ -13,3 +13,4 @@ deployment:
     - /bin/cp sitemap.xml "$DEPLOYPATH"
     - /bin/cp googlee77c63d4a3e671af.html "$DEPLOYPATH"
     - /bin/cp logo.webp "$DEPLOYPATH"
+    - /bin/cp contact.php "$DEPLOYPATH"
