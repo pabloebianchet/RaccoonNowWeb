@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/c2421385/public_html/
+    - /bin/cp -r assets "$DEPLOYPATH"
+    - /bin/cp -r en "$DEPLOYPATH"
+    - /bin/cp -r es "$DEPLOYPATH"
+    - /bin/cp -r it "$DEPLOYPATH"
+    - /bin/cp index.html "$DEPLOYPATH"
+    - /bin/cp automatizacion-ia.html "$DEPLOYPATH"
+    - /bin/cp .htaccess "$DEPLOYPATH"
+    - /bin/cp robots.txt "$DEPLOYPATH"
+    - /bin/cp sitemap.xml "$DEPLOYPATH"
+    - /bin/cp googlee77c63d4a3e671af.html "$DEPLOYPATH"
+    - /bin/cp logo.webp "$DEPLOYPATH"
