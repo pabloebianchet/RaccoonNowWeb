@@ -46,6 +46,73 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/" />
   </url>
 
+  <!-- Blog -->
+  <url>
+    <loc>https://www.raccoonnow.com/es/blog/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/en/blog/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/blog/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/ai-trends-business-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/tendenze-ia-aziende-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/en/blog/ai-trends-business-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/ai-trends-business-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/tendenze-ia-aziende-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/blog/tendenze-ia-aziende-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/ai-trends-business-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/tendenze-ia-aziende-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html" />
+  </url>
+
   <!-- Automatización con IA -->
   <url>
     <loc>https://www.raccoonnow.com/automatizacion-ia.html</loc>
