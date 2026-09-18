@@ -113,6 +113,39 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/tendencias-ia-empresas-2026.html" />
   </url>
 
+  <url>
+    <loc>https://www.raccoonnow.com/es/blog/tienda-online-argentina-guia-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/tienda-online-argentina-guia-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/online-store-us-guide-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/negozio-online-italia-guida-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/tienda-online-argentina-guia-2026.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/en/blog/online-store-us-guide-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/tienda-online-argentina-guia-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/online-store-us-guide-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/negozio-online-italia-guida-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/tienda-online-argentina-guia-2026.html" />
+  </url>
+
+  <url>
+    <loc>https://www.raccoonnow.com/it/blog/negozio-online-italia-guida-2026.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.raccoonnow.com/es/blog/tienda-online-argentina-guia-2026.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.raccoonnow.com/en/blog/online-store-us-guide-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.raccoonnow.com/it/blog/negozio-online-italia-guida-2026.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.raccoonnow.com/es/blog/tienda-online-argentina-guia-2026.html" />
+  </url>
+
   <!-- Automatización con IA -->
   <url>
     <loc>https://www.raccoonnow.com/automatizacion-ia.html</loc>
