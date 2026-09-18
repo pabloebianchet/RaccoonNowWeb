@@ -346,6 +346,11 @@ footer{background:var(--wh);color:var(--ink);padding:5rem 5% 2.5rem}
 .blog-card h3{font-family:var(--fh);font-size:1.4rem;font-weight:700;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05}
 .blog-card p{font-size:.88rem;color:var(--mu2);line-height:1.65}
 .blog-card-link{margin-top:auto;font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.3px;color:var(--og)}
+.blog-pager{display:flex;gap:.5rem;justify-content:center;margin-top:3rem;flex-wrap:wrap}
+.blog-pager-btn{min-width:40px;height:40px;padding:0 .8rem;border-radius:var(--r-btn);background:var(--card);color:var(--mu2);font-family:var(--fm);font-size:.85rem;font-weight:500;border:none;transition:all .2s}
+.blog-pager-btn:hover:not(:disabled){background:var(--bg2);color:var(--wh)}
+.blog-pager-btn.active{background:var(--og);color:var(--ink)}
+.blog-pager-btn:disabled{opacity:.35;cursor:default}
 
 /* ── ARTICLE ── */
 .article-hero{padding:9rem 5% 2rem;max-width:820px;margin:0 auto}

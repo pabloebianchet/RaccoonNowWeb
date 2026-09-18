@@ -103,3 +103,33 @@ document.querySelectorAll('.office-card,.why-card,.svc-card').forEach(card=>{
   });
   card.addEventListener('mouseleave',()=>{card.style.transform='';});
 });
+
+// ── BLOG PAGINATION ────────────────────────────────────
+(function(){
+  const grid=document.querySelector('.blog-grid');
+  const pager=document.getElementById('blogPager');
+  if(!grid||!pager)return;
+  const PAGE_SIZE=6;
+  const cards=Array.from(grid.children);
+  const pages=Math.ceil(cards.length/PAGE_SIZE);
+  if(pages<=1)return;
+  let current=1;
+  function render(){
+    cards.forEach((card,i)=>{
+      card.style.display=(i>=(current-1)*PAGE_SIZE && i<current*PAGE_SIZE)?'':'none';
+    });
+    pager.innerHTML='';
+    const mk=(label,page,disabled,active)=>{
+      const b=document.createElement('button');
+      b.className='blog-pager-btn'+(active?' active':'');
+      b.textContent=label;
+      b.disabled=!!disabled;
+      b.addEventListener('click',()=>{current=page;render();grid.scrollIntoView({behavior:'smooth',block:'start'});});
+      return b;
+    };
+    pager.appendChild(mk('←',Math.max(1,current-1),current===1));
+    for(let p=1;p<=pages;p++) pager.appendChild(mk(String(p),p,false,p===current));
+    pager.appendChild(mk('→',Math.min(pages,current+1),current===pages));
+  }
+  render();
+})();
