@@ -354,9 +354,12 @@ footer{background:var(--wh);color:var(--ink);padding:5rem 5% 2.5rem}
 .blog-pager-btn:hover:not(:disabled){background:var(--bg2);color:var(--wh)}
 .blog-pager-btn.active{background:var(--og);color:var(--ink)}
 .blog-pager-btn:disabled{opacity:.35;cursor:default}
+.more-articles{max-width:820px;margin:0 auto;padding:1rem 5% 3rem}
+.more-articles .blog-grid{grid-template-columns:repeat(2,1fr)}
+@media(max-width:700px){.more-articles .blog-grid{grid-template-columns:1fr}}
 
 /* ── ARTICLE ── */
-.article-hero{padding:9rem 5% 2rem;max-width:820px;margin:0 auto}
+.article-hero{padding:1rem 5% 2rem;max-width:820px;margin:0 auto}
 .article-hero .sect-tag{margin-bottom:1.2rem}
 .article-cover{max-width:820px;margin:2rem auto 0;height:220px;background:var(--bg2);border-radius:var(--r-lg);position:relative;overflow:hidden}
 .cover-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,101,32,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,101,32,.08) 1px,transparent 1px);background-size:32px 32px}

@@ -133,3 +133,24 @@ document.querySelectorAll('.office-card,.why-card,.svc-card').forEach(card=>{
   }
   render();
 })();
+
+// ── ARTICLE: MORE ARTICLES (reads sibling blog index) ──
+(function(){
+  const container=document.getElementById('moreArticles');
+  if(!container)return;
+  const section=container.closest('.more-articles');
+  const currentFile=location.pathname.split('/').filter(Boolean).pop()||'';
+  fetch('./index.html').then(r=>{
+    if(!r.ok)throw new Error('no index');
+    return r.text();
+  }).then(html=>{
+    const doc=new DOMParser().parseFromString(html,'text/html');
+    const cards=Array.from(doc.querySelectorAll('.blog-card'));
+    const others=cards.filter(c=>{
+      const href=c.getAttribute('href')||'';
+      return href.split('/').filter(Boolean).pop()!==currentFile;
+    }).slice(0,2);
+    if(others.length===0){ if(section)section.style.display='none'; return; }
+    others.forEach(c=>container.appendChild(c));
+  }).catch(()=>{ if(section)section.style.display='none'; });
+})();
