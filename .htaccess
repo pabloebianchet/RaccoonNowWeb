@@ -1,5 +1,19 @@
 Options -Indexes
 
+# CSS/JS del sitio cambian seguido durante desarrollo activo — caché corta
+# para que los visitantes vean los cambios sin necesitar un hard refresh.
+<IfModule mod_expires.c>
+  <FilesMatch "\.(css|js)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 hour"
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
 # Redirects 301 — páginas del sitio anterior
 Redirect 301 /contacto.html https://www.raccoonnow.com/
 Redirect 301 /proceso.html https://www.raccoonnow.com/

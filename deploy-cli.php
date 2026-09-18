@@ -13,17 +13,31 @@ function logmsg($log, $msg){
     file_put_contents($log, implode("\n", $lines) . "\n" . $line);
 }
 
+function safeCopy($s, $d){
+    $size = filesize($s);
+    if($size === false) return false;
+    $tmp = $d . '.tmp_' . uniqid();
+    if(!copy($s, $tmp)) { @unlink($tmp); return false; }
+    if(filesize($tmp) !== $size) { @unlink($tmp); return false; }
+    return rename($tmp, $d);
+}
+
 function rcopy($src, $dst){
     if(!is_dir($dst)) mkdir($dst, 0755, true);
     $dir = opendir($src);
+    $failed = [];
     while(($file = readdir($dir)) !== false){
         if($file === '.' || $file === '..') continue;
         $s = $src . '/' . $file;
         $d = $dst . '/' . $file;
-        if(is_dir($s)) rcopy($s, $d);
-        else copy($s, $d);
+        if(is_dir($s)){
+            $failed = array_merge($failed, rcopy($s, $d));
+        } else {
+            if(!safeCopy($s, $d)) $failed[] = $d;
+        }
     }
     closedir($dir);
+    return $failed;
 }
 
 function rrmdir($dir){
@@ -74,17 +88,25 @@ try {
 
     $items = ['assets','en','es','it','index.html','automatizacion-ia.html','.htaccess','robots.txt','sitemap.xml','googlee77c63d4a3e671af.html','logo.webp','contact.php'];
     $copied = [];
+    $failed = [];
     foreach($items as $item){
         $from = $src . '/' . $item;
         $to = $dest . '/' . $item;
         if(!file_exists($from)) continue;
-        if(is_dir($from)) rcopy($from, $to);
-        else copy($from, $to);
+        if(is_dir($from)){
+            $failed = array_merge($failed, rcopy($from, $to));
+        } elseif(!safeCopy($from, $to)){
+            $failed[] = $to;
+        }
         $copied[] = $item;
     }
 
     rrmdir($tmpDir);
-    logmsg($log, 'OK - copiado: ' . implode(', ', $copied));
+    if(!empty($failed)){
+        logmsg($log, 'PARCIAL - copiado: ' . implode(', ', $copied) . ' | FALLARON: ' . implode(', ', $failed));
+    } else {
+        logmsg($log, 'OK - copiado: ' . implode(', ', $copied));
+    }
 } catch (Exception $e){
     logmsg($log, 'ERROR: ' . $e->getMessage());
 }
