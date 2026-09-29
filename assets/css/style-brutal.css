@@ -369,9 +369,10 @@ footer{background:var(--wh);color:var(--ink);padding:5rem 5% 2.5rem}
 .article-body a{color:var(--cy);text-decoration:underline}
 
 /* ── ARTICLE + SIDEBAR LAYOUT ── */
-.post-layout{max-width:1100px;margin:0 auto;padding:1rem 5% 4rem;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:3.5rem;align-items:start}
+.post-layout{max-width:1100px;margin:0 auto;padding:1rem 5% 4rem;display:grid;grid-auto-flow:dense;grid-template-columns:minmax(0,1fr) 300px;gap:3.5rem;align-items:start}
 .post-main{min-width:0}
-.post-sidebar{position:sticky;top:9rem}
+.post-layout .cta-s{grid-column:1/-1;width:100vw;position:relative;left:50%;margin-left:-50vw}
+.post-sidebar{position:sticky;top:9rem;order:3}
 .sidebar-title{font-family:var(--fh);font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:-.01em;line-height:1;margin-bottom:1.2rem}
 .side-list{display:flex;flex-direction:column;gap:.7rem}
 .side-card{display:block;background:var(--card);border-radius:var(--r-card);padding:.9rem 1.1rem;transition:transform .2s}
