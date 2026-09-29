@@ -193,3 +193,24 @@ document.querySelectorAll('.office-card,.why-card,.svc-card').forEach(card=>{
     render();
   }).catch(hide);
 })();
+
+// ── ARTICLE: MOVE CTA BEFORE SIDEBAR ON MOBILE ──
+(function(){
+  const layout=document.querySelector('.post-layout');
+  const sidebar=layout&&layout.querySelector('.post-sidebar');
+  const cta=document.querySelector('.cta-s');
+  if(!layout||!sidebar||!cta)return;
+  const originalParent=cta.parentNode;
+  const originalNext=cta.nextSibling;
+  const mq=window.matchMedia('(max-width:900px)');
+  function apply(){
+    if(mq.matches){
+      if(cta.parentNode!==layout) layout.insertBefore(cta,sidebar);
+    } else if(cta.parentNode===layout){
+      originalParent.insertBefore(cta,originalNext);
+    }
+  }
+  apply();
+  if(mq.addEventListener) mq.addEventListener('change',apply);
+  else window.addEventListener('resize',apply);
+})();
