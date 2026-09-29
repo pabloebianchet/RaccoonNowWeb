@@ -134,23 +134,62 @@ document.querySelectorAll('.office-card,.why-card,.svc-card').forEach(card=>{
   render();
 })();
 
-// ── ARTICLE: MORE ARTICLES (reads sibling blog index) ──
+// ── ARTICLE: RECENT POSTS SIDEBAR (reads sibling blog index) ──
 (function(){
-  const container=document.getElementById('moreArticles');
-  if(!container)return;
-  const section=container.closest('.more-articles');
+  const list=document.getElementById('sideList');
+  const pagerEl=document.getElementById('sidePager');
+  if(!list)return;
+  const wrap=list.closest('.post-sidebar');
+  const PAGE_SIZE=5;
   const currentFile=location.pathname.split('/').filter(Boolean).pop()||'';
+  function hide(){ if(wrap) wrap.style.display='none'; }
   fetch('./index.html').then(r=>{
     if(!r.ok)throw new Error('no index');
     return r.text();
   }).then(html=>{
     const doc=new DOMParser().parseFromString(html,'text/html');
     const cards=Array.from(doc.querySelectorAll('.blog-card'));
-    const others=cards.filter(c=>{
+    const items=cards.filter(c=>{
       const href=c.getAttribute('href')||'';
       return href.split('/').filter(Boolean).pop()!==currentFile;
-    }).slice(0,2);
-    if(others.length===0){ if(section)section.style.display='none'; return; }
-    others.forEach(c=>container.appendChild(c));
-  }).catch(()=>{ if(section)section.style.display='none'; });
+    }).map(c=>({
+      href:c.getAttribute('href'),
+      date:(c.querySelector('.blog-card-date')||{}).textContent||'',
+      title:(c.querySelector('h3')||{}).textContent||''
+    }));
+    if(items.length===0){ hide(); return; }
+    const pages=Math.ceil(items.length/PAGE_SIZE);
+    let current=1;
+    function render(){
+      list.innerHTML='';
+      items.slice((current-1)*PAGE_SIZE,current*PAGE_SIZE).forEach(it=>{
+        const a=document.createElement('a');
+        a.className='side-card';
+        a.href=it.href;
+        const d=document.createElement('span');
+        d.className='side-card-date';
+        d.textContent=it.date;
+        const h=document.createElement('h4');
+        h.textContent=it.title;
+        a.appendChild(d);
+        a.appendChild(h);
+        list.appendChild(a);
+      });
+      if(!pagerEl)return;
+      pagerEl.innerHTML='';
+      if(pages<=1)return;
+      const mk=(label,page,disabled,active)=>{
+        const b=document.createElement('button');
+        b.className='blog-pager-btn'+(active?' active':'');
+        b.textContent=label;
+        b.disabled=!!disabled;
+        b.addEventListener('click',()=>{current=page;render();});
+        return b;
+      };
+      pagerEl.appendChild(mk('←',Math.max(1,current-1),current===1));
+      for(let p=1;p<=pages;p++) pagerEl.appendChild(mk(String(p),p,false,p===current));
+      pagerEl.appendChild(mk('→',Math.min(pages,current+1),current===pages));
+    }
+    render();
+  }).catch(hide);
 })();
